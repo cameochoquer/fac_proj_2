@@ -18,7 +18,8 @@ p{text-align:center;
     height:400px;
     z-index:1;
     position:relative; 
-  }
+
+     }
   
   .box::before {
     position:absolute;
@@ -40,6 +41,7 @@ p{text-align:center;
     border-radius: 50%;
     top: 10%;
     left: 10%;
+    object-fit: cover;
   }
 
   .description{
@@ -77,4 +79,14 @@ p{text-align:center;
       background: #14c5d5;
     }
   }
- 
+
+  @media only screen and (max-width: 1000px) {
+      .box {height:300px;
+            width:300px;
+      };
+  }
+  @media only screen and (max-width: 1000px) {
+    p {
+      font-size: 70%
+    };
+}
